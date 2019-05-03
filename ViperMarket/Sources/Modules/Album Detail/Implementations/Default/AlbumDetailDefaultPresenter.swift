@@ -12,7 +12,6 @@ class AlbumDetailDefaultPresenter {
     
     var router: AlbumDetailRouterProtocol?
     var interactor: AlbumDetailInteractorProtocol?
-    weak var view: AlbumDetailViewProtocol?
     
     var presenterToViewSubject: PublishSubject<[PhotoItem]>?
     let disposeBag = DisposeBag()
@@ -41,9 +40,8 @@ extension AlbumDetailDefaultPresenter: AlbumDetailPresenterProtocol {
         
     }
     
-    func showPhotoDetail(_ photo: PhotoItem) {
-        
+    func showPhotoDetail(_ view: AlbumDetailViewProtocol, _ photo: PhotoItem) {
+        router?.presentToDoPhotoScreen(from: view, for: photo)
     }
-    
 
 }

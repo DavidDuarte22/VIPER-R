@@ -10,10 +10,8 @@ import UIKit
 
 protocol AlbumDetailRouterProtocol {
     
-    var presenter: AlbumDetailPresenterProtocol? { get set }
-    
     static func createAlbumDetailRouterModule(with album: AlbumItem) -> UIViewController
-    // PRESENTER -> ROUTER
+    func presentToDoPhotoScreen(from view: AlbumDetailViewProtocol, for photo: PhotoItem)
     func navigateBackToListViewController(from view: AlbumDetailViewProtocol)
     
 }

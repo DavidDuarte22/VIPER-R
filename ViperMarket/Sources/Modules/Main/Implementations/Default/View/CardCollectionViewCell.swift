@@ -11,6 +11,5 @@ import UIKit
 class CardCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var userLabel: UILabel!
     
 }

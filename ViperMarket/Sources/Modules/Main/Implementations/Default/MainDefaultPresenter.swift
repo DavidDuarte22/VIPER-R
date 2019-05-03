@@ -38,7 +38,6 @@ extension MainDefaultPresenter: MainPresenterProtocol {
     
     func showAlbumDetail(_ view: MainViewProtocol, _ album: AlbumItem) {
         router?.presentToDoDetailScreen(from: view, for: album)
-        // csargar detalle de album
     }
     
 }

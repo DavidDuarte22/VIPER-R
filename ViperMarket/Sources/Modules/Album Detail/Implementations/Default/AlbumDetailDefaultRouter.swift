@@ -9,14 +9,9 @@ import Foundation
 import UIKit
 
 class AlbumDetailDefaultRouter {
-
-    weak var presenter: AlbumDetailPresenterProtocol?
-    weak var viewController: UIViewController?
-    
     static var storyboard: UIStoryboard {
-        return UIStoryboard(name: "MainDetail", bundle: Bundle.main)
+        return UIStoryboard(name: "MainAlbumDetail", bundle: Bundle.main)
     }
-    
 }
 
 extension AlbumDetailDefaultRouter: AlbumDetailRouterProtocol {
@@ -45,11 +40,20 @@ extension AlbumDetailDefaultRouter: AlbumDetailRouterProtocol {
         
         todoDetailVC.presenter = presenter
         interactor.album = album
-        presenter.view = todoDetailVC
         presenter.interactor = interactor
         presenter.router = router
         
         return todoDetailVC
+    }
+    
+    func presentToDoPhotoScreen(from view: AlbumDetailViewProtocol, for photo: PhotoItem) {
+        let photoDetailVC = PhotoDetailDefaultRouter.createPhotoDetailRouterModule(with: photo)
+        
+        guard let viewVC = view as? UIViewController else {
+            fatalError("Invalid View Protocol type")
+        }
+        
+        viewVC.navigationController?.pushViewController(photoDetailVC, animated: true)
     }
     
     func navigateBackToListViewController(from view: AlbumDetailViewProtocol) {
@@ -59,5 +63,7 @@ extension AlbumDetailDefaultRouter: AlbumDetailRouterProtocol {
         viewVC.navigationController?.popViewController(animated: true)
     }
     
+    
 
 }
+

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iWR-Vh-ZLI">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,51 +15,53 @@
             <objects>
                 <viewController storyboardIdentifier="MainDefaultView" id="kSm-jo-ToS" customClass="MainDefaultViewController" customModule="ViperMarket" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KVE-8M-m1P">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="David Duarte - davidjulianduarte@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rky-xk-39C">
-                                <rect key="frame" x="20" y="841.5" width="366" height="20.5"/>
+                                <rect key="frame" x="16" y="737.33333333333337" width="343" height="40.666666666666629"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="im3-uE-B9i">
-                                <rect key="frame" x="20" y="88" width="366" height="746"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="im3-uE-B9i">
+                                <rect key="frame" x="20" y="88" width="339" height="641.66666666666663"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="30" minimumInteritemSpacing="10" id="903-Sv-5zG">
-                                    <size key="itemSize" width="366" height="349"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="903-Sv-5zG">
+                                    <size key="itemSize" width="158" height="212"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="card" id="wtc-Xu-yAb" customClass="CardCollectionViewCell" customModule="ViperMarket" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="366" height="349"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="card" id="wtc-Xu-yAb" customClass="CardCollectionViewCell" customModule="ViperMarket" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="158" height="212"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="366" height="349"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="158" height="212"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csj-8t-rXC">
-                                                    <rect key="frame" x="20" y="43" width="326" height="242"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csj-8t-rXC">
+                                                    <rect key="frame" x="66.666666666666671" y="149.66666666666666" width="25" height="72"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="72" id="M07-A6-7GU"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sge-VB-lO4">
-                                                    <rect key="frame" x="20" y="311" width="150" height="18"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="emR-3U-qoN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="157" height="157"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                                </imageView>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="csj-8t-rXC" firstAttribute="centerX" secondItem="wtc-Xu-yAb" secondAttribute="centerX" id="JDD-D1-RfV"/>
+                                        </constraints>
+                                        <size key="customSize" width="158" height="212"/>
                                         <connections>
                                             <outlet property="titleLabel" destination="csj-8t-rXC" id="nWu-YK-Iw1"/>
-                                            <outlet property="userLabel" destination="sge-VB-lO4" id="pCC-Sk-aEV"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -68,7 +70,12 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Rky-xk-39C" firstAttribute="leading" secondItem="KVE-8M-m1P" secondAttribute="leadingMargin" id="4Fa-oL-neW"/>
+                            <constraint firstItem="im3-uE-B9i" firstAttribute="leading" secondItem="7fc-df-oZm" secondAttribute="leading" constant="20" id="9f3-GF-bQQ"/>
+                            <constraint firstItem="7fc-df-oZm" firstAttribute="trailing" secondItem="im3-uE-B9i" secondAttribute="trailing" constant="16" id="GKG-ld-dYM"/>
+                            <constraint firstItem="Rky-xk-39C" firstAttribute="centerX" secondItem="7fc-df-oZm" secondAttribute="centerX" id="Pvd-RG-OFf"/>
                             <constraint firstItem="Rky-xk-39C" firstAttribute="bottom" secondItem="7fc-df-oZm" secondAttribute="bottom" id="UKz-j0-aQX"/>
+                            <constraint firstItem="Rky-xk-39C" firstAttribute="top" secondItem="im3-uE-B9i" secondAttribute="bottom" constant="7.6666666666666288" id="cp4-NP-Zv6"/>
+                            <constraint firstItem="im3-uE-B9i" firstAttribute="top" secondItem="7fc-df-oZm" secondAttribute="top" id="y2U-HX-YDn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7fc-df-oZm"/>
                     </view>
@@ -79,14 +86,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3wp-iC-jaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1973.913043478261" y="152.67857142857142"/>
+            <point key="canvasLocation" x="1973.5999999999999" y="152.21674876847291"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dpn-ay-l5p">
             <objects>
                 <navigationController storyboardIdentifier="NavigationController" id="iWR-Vh-ZLI" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wzK-Nl-kGp">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

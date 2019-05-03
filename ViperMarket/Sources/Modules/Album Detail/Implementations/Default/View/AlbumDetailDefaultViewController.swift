@@ -56,13 +56,18 @@ UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = photosCollectionView.dequeueReusableCell(withReuseIdentifier: "photoCard", for: indexPath) as? PhotoCollectionViewCell
-        cell?.titleLabel.text = photos?[indexPath.row].title
+        if let filePath = Bundle.main.path(forResource: photos?[indexPath.row].thumbnailUrl, ofType: "jpg"), let image = UIImage(contentsOfFile: filePath) {
+            cell?.photoImage.contentMode = .scaleAspectFit
+            cell?.photoImage.image = image
+        }
+        
+//        cell?.titleLabel.text = photos?[indexPath.row].title
         return cell!
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath)
-        //presenter?.showAlbumDetail(self, photos[indexPath.row])
+        presenter?.showPhotoDetail(self, photos![indexPath.row])
     }
 }
 
