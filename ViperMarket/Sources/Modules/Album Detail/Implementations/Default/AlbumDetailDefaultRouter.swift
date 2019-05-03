@@ -14,7 +14,7 @@ class AlbumDetailDefaultRouter {
     weak var viewController: UIViewController?
     
     static var storyboard: UIStoryboard {
-        return UIStoryboard(name: "Main", bundle: Bundle.main)
+        return UIStoryboard(name: "MainDetail", bundle: Bundle.main)
     }
     
 }
@@ -22,10 +22,10 @@ class AlbumDetailDefaultRouter {
 extension AlbumDetailDefaultRouter: AlbumDetailRouterProtocol {
     static func instanciateHomeModule() -> UIViewController {
         let navController = storyboard.instantiateViewController(withIdentifier: "NavigationController") as! UINavigationController
-        guard let todoListViewController = navController.topViewController as? MainDefaultViewController else { fatalError("Invalid View Controller") }
-        let presenter = MainDefaultPresenter()
-        let interactor = MainDefaultInteractor()
-        let router = MainDefaultRouter()
+        guard let todoListViewController = navController.topViewController as? AlbumDetailDefaultViewController else { fatalError("Invalid View Controller") }
+        let presenter = AlbumDetailDefaultPresenter()
+        let interactor = AlbumDetailDefaultInteractor()
+        let router = AlbumDetailDefaultRouter()
         
         todoListViewController.presenter = presenter
         presenter.interactor = interactor
@@ -35,7 +35,7 @@ extension AlbumDetailDefaultRouter: AlbumDetailRouterProtocol {
     }
     
     static func createAlbumDetailRouterModule(with album: AlbumItem) -> UIViewController {
-        guard let todoDetailVC = storyboard.instantiateViewController(withIdentifier: "AlbumDetailViewController") as? AlbumDetailDefaultViewController else {
+        guard let todoDetailVC = storyboard.instantiateViewController(withIdentifier: "AlbumDetailDefaultViewController") as? AlbumDetailDefaultViewController else {
             fatalError("Invalid view controller type")
         }
         
@@ -44,8 +44,8 @@ extension AlbumDetailDefaultRouter: AlbumDetailRouterProtocol {
         let router = AlbumDetailDefaultRouter()
         
         todoDetailVC.presenter = presenter
+        interactor.album = album
         presenter.view = todoDetailVC
-        //interactor.todoItem = todo
         presenter.interactor = interactor
         presenter.router = router
         

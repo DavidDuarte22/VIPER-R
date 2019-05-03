@@ -36,11 +36,8 @@ extension MainDefaultPresenter: MainPresenterProtocol {
         
     }
     
-    func showPhotoDetail(_ photo: PhotoItem) {
-        // cargar detalle de foto
-    }
-    
-    func showAlbumDetail(_ album: AlbumItem) {
+    func showAlbumDetail(_ view: MainViewProtocol, _ album: AlbumItem) {
+        router?.presentToDoDetailScreen(from: view, for: album)
         // csargar detalle de album
     }
     

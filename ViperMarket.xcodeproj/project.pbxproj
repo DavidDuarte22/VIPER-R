@@ -24,6 +24,7 @@
 		03BFA8AF2278C37C00D93F46 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BFA8AE2278C37C00D93F46 /* HttpClient.swift */; };
 		03BFA8B1227A1CAA00D93F46 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BFA8B0227A1CAA00D93F46 /* HttpResponse.swift */; };
 		03BFA8B3227A1D3B00D93F46 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BFA8B2227A1D3B00D93F46 /* HttpError.swift */; };
+		03F2BC9C227C63040057D4BB /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F2BC9B227C63040057D4BB /* PhotoCollectionViewCell.swift */; };
 		03F5054B2277BC3C007B83FC /* AlbumDetailDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F505412277BC3C007B83FC /* AlbumDetailDefaultViewController.swift */; };
 		03F5054C2277BC3C007B83FC /* AlbumDetailDefaultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F505422277BC3C007B83FC /* AlbumDetailDefaultPresenter.swift */; };
 		03F5054D2277BC3C007B83FC /* AlbumDetailDefaultInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F505432277BC3C007B83FC /* AlbumDetailDefaultInteractor.swift */; };
@@ -34,8 +35,8 @@
 		03F505532277BC3C007B83FC /* AlbumDetailPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F5054A2277BC3C007B83FC /* AlbumDetailPresenterProtocol.swift */; };
 		03F505562277DC06007B83FC /* AlbumItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F505552277DC06007B83FC /* AlbumItem.swift */; };
 		03F505582277DC66007B83FC /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F505572277DC66007B83FC /* PhotoItem.swift */; };
-		03F5055A2277DCE1007B83FC /* TodoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F505592277DCE1007B83FC /* TodoStore.swift */; };
 		03F64658227244D4007359D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F64657227244D4007359D6 /* Main.storyboard */; };
+		03F8F5FD227BC57500D1D4D8 /* MainDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F8F5FC227BC57500D1D4D8 /* MainDetail.storyboard */; };
 		55BE3D5CC6718471A2A5A1B2 /* Pods_ViperMarket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5673565AFDA3BFC66A9D21A2 /* Pods_ViperMarket.framework */; };
 		BF7A05A05CDC409EFFDBACE9 /* Pods_ViperMarketTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1586BC664CF04A02777273 /* Pods_ViperMarketTests.framework */; };
 		F4274A7006B199EA510BC5F9 /* Pods_ViperMarketUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD493742FB700191D1093A0 /* Pods_ViperMarketUITests.framework */; };
@@ -82,6 +83,7 @@
 		03BFA8AE2278C37C00D93F46 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		03BFA8B0227A1CAA00D93F46 /* HttpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
 		03BFA8B2227A1D3B00D93F46 /* HttpError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
+		03F2BC9B227C63040057D4BB /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		03F505412277BC3C007B83FC /* AlbumDetailDefaultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumDetailDefaultViewController.swift; sourceTree = "<group>"; };
 		03F505422277BC3C007B83FC /* AlbumDetailDefaultPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumDetailDefaultPresenter.swift; sourceTree = "<group>"; };
 		03F505432277BC3C007B83FC /* AlbumDetailDefaultInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumDetailDefaultInteractor.swift; sourceTree = "<group>"; };
@@ -92,8 +94,8 @@
 		03F5054A2277BC3C007B83FC /* AlbumDetailPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumDetailPresenterProtocol.swift; sourceTree = "<group>"; };
 		03F505552277DC06007B83FC /* AlbumItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumItem.swift; sourceTree = "<group>"; };
 		03F505572277DC66007B83FC /* PhotoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoItem.swift; sourceTree = "<group>"; };
-		03F505592277DCE1007B83FC /* TodoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoStore.swift; sourceTree = "<group>"; };
 		03F64657227244D4007359D6 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		03F8F5FC227BC57500D1D4D8 /* MainDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainDetail.storyboard; sourceTree = "<group>"; };
 		078DDFCC54116B5A58FEAC60 /* Pods-ViperMarket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperMarket.release.xcconfig"; path = "Target Support Files/Pods-ViperMarket/Pods-ViperMarket.release.xcconfig"; sourceTree = "<group>"; };
 		1A8695817A79ED90B6642FD8 /* Pods-ViperMarketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperMarketTests.debug.xcconfig"; path = "Target Support Files/Pods-ViperMarketTests/Pods-ViperMarketTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1E1D07B9165AF537FA27E6B9 /* Pods-ViperMarketUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperMarketUITests.debug.xcconfig"; path = "Target Support Files/Pods-ViperMarketUITests/Pods-ViperMarketUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -291,10 +293,12 @@
 		03F505402277BC3C007B83FC /* Default */ = {
 			isa = PBXGroup;
 			children = (
-				03F505412277BC3C007B83FC /* AlbumDetailDefaultViewController.swift */,
+				03F8F5FE227BD49C00D1D4D8 /* View */,
+				03F8F5FB227BC56000D1D4D8 /* Resources */,
 				03F505422277BC3C007B83FC /* AlbumDetailDefaultPresenter.swift */,
 				03F505432277BC3C007B83FC /* AlbumDetailDefaultInteractor.swift */,
 				03F505442277BC3C007B83FC /* AlbumDetailDefaultRouter.swift */,
+				03F505552277DC06007B83FC /* AlbumItem.swift */,
 			);
 			path = Default;
 			sourceTree = "<group>";
@@ -313,9 +317,7 @@
 		03F505542277DBF0007B83FC /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				03F505552277DC06007B83FC /* AlbumItem.swift */,
 				03F505572277DC66007B83FC /* PhotoItem.swift */,
-				03F505592277DCE1007B83FC /* TodoStore.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -326,6 +328,23 @@
 				03F64657227244D4007359D6 /* Main.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		03F8F5FB227BC56000D1D4D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				03F8F5FC227BC57500D1D4D8 /* MainDetail.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		03F8F5FE227BD49C00D1D4D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03F505412277BC3C007B83FC /* AlbumDetailDefaultViewController.swift */,
+				03F2BC9B227C63040057D4BB /* PhotoCollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		2FD5C0DD496C85B7A2709E99 /* Pods */ = {
@@ -459,6 +478,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F8F5FD227BC57500D1D4D8 /* MainDetail.storyboard in Resources */,
 				03F64658227244D4007359D6 /* Main.storyboard in Resources */,
 				03AB0AA6226D17D3000E0F28 /* LaunchScreen.storyboard in Resources */,
 				03AB0AA3226D17D3000E0F28 /* Assets.xcassets in Resources */,
@@ -582,11 +602,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				03F5054E2277BC3C007B83FC /* AlbumDetailDefaultRouter.swift in Sources */,
+				03F2BC9C227C63040057D4BB /* PhotoCollectionViewCell.swift in Sources */,
 				03AB0ADC226D1899000E0F28 /* MainDefaultPresenter.swift in Sources */,
 				03F505502277BC3C007B83FC /* AlbumDetailInteractorProtocol.swift in Sources */,
 				03AB0ADA226D1899000E0F28 /* MainDefaultViewController.swift in Sources */,
 				03BFA8AF2278C37C00D93F46 /* HttpClient.swift in Sources */,
-				03F5055A2277DCE1007B83FC /* TodoStore.swift in Sources */,
 				03F505512277BC3C007B83FC /* AlbumDetailViewProtocol.swift in Sources */,
 				03F505562277DC06007B83FC /* AlbumItem.swift in Sources */,
 				03BFA8B1227A1CAA00D93F46 /* HttpResponse.swift in Sources */,

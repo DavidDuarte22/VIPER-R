@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol AlbumDetailInteractorProtocol {
-    
-    func fetchAlbum()
+    var interactorToPresenterSubject: PublishSubject<[PhotoItem]>? { get }
+    func fetchAlbum() -> AlbumItem
+    func fetchPhotos()
 }

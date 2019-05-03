@@ -28,7 +28,6 @@ class MainDefaultViewController: UIViewController {
     }
     
     func subscribeToObserver (_ subject: PublishSubject<[AlbumItem]>) {
-        
         subject.subscribe(
             onNext: {(albums) in
                 self.albums = albums
@@ -57,8 +56,12 @@ UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = albumsCollectionView.dequeueReusableCell(withReuseIdentifier: "card", for: indexPath) as? CardCollectionViewCell
+        cell?.titleLabel.text = albums[indexPath.row].title
+        cell?.userLabel.text  = "Usuario: \(albums[indexPath.row].userId)"
         return cell!
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        presenter?.showAlbumDetail(self, albums[indexPath.row])
+    }
 }

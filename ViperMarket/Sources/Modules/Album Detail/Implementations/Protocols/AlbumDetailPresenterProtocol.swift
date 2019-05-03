@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol AlbumDetailPresenterProtocol: class {
     
@@ -14,6 +15,9 @@ protocol AlbumDetailPresenterProtocol: class {
     var view: AlbumDetailViewProtocol? { get set }
     
     // VIEW -> PRESENTER
-    func viewDidLoad()
+    var presenterToViewSubject: PublishSubject<[PhotoItem]>? { get }
+
+    func showAlbum() -> AlbumItem
+    func showPhotos()
     func showPhotoDetail(_ photo: PhotoItem)
 }

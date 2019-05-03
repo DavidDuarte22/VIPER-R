@@ -10,20 +10,25 @@ import Foundation
 import UIKit
 
 class PhotoItem: Codable {
-    
+    var albumId: Int
+    var id: Int
     var title: String
-    var description: String
-    var photo: String
+    var url: String
+    var thumbnailUrl: String
     
     enum CodingKeys: String, CodingKey {
+        case albumId = "albumId"
+        case id = "id"
         case title = "title"
-        case description = "description"
-        case photo = "photo"
+        case url = "url"
+        case thumbnailUrl = "thumbnailUrl"
     }
     
-    init(title: String, description: String, photo: String) {
+    init(albumId: Int, id: Int, title: String, url: String, thumbnailUrl: String) {
+        self.id = id
+        self.albumId = albumId
         self.title = title
-        self.description = description
-        self.photo = photo
+        self.url = url
+        self.thumbnailUrl = thumbnailUrl
     }
 }

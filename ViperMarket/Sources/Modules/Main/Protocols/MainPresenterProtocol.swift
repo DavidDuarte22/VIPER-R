@@ -16,6 +16,5 @@ protocol MainPresenterProtocol: class {
     var presenterToViewSubject: PublishSubject<[AlbumItem]>? { get }
     
     func showAlbums()
-    func showPhotoDetail(_ photo: PhotoItem)
-    func showAlbumDetail(_ album: AlbumItem)
+    func showAlbumDetail(_ view: MainViewProtocol, _ album: AlbumItem)
 }

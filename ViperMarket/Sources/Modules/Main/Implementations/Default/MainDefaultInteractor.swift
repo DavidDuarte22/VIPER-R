@@ -9,7 +9,6 @@ import Foundation
 import RxSwift
 
 class MainDefaultInteractor {
-    //var todoStore = TodoStore.shared
     var interactorToPresenterSubject: PublishSubject<[AlbumItem]>?
     
     init() {
